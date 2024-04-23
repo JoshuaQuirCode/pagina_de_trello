@@ -8,16 +8,32 @@ align-items: center;
 display: flex;
 }
 #Card{
-    background-color: #0A084B;
+    background-color: black;
     border-radius: 3%;
     width: 62vh;
     height: 95vh;
-    justify-content: center;
-    display: flex;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 img{
     width: 190px;
     height: 190px;
     border-radius: 50%;
-    margin-top: 8%;
+    scrollbar-shadow-color: blue;
+}
+#cuadroTexto{
+    background-color: #181B20;
+    width: 50vh;
+    height: 40vh;
+}
+#texto{
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings:
+}
+.enlaces{
+
 }
