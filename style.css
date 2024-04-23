@@ -25,6 +25,7 @@ img{
     height: 190px;
     border-radius: 50%;
     scrollbar-shadow-color: blue;
+    object-fit: cover; /*con esta propiedad tu imagen mantiene la forma*/
 }
 #cuadroTexto{
     background-color: #181B20;
@@ -35,7 +36,6 @@ img{
         font-family: "Inter", sans-serif;
         font-optical-sizing: auto;
         font-style: normal;
-        font-variation-settings:
 }
 #enlaces{
     justify-content: space-around;
