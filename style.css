@@ -8,7 +8,7 @@ body {
     display: flex;
 }
 
-#Card {
+.Card {
     background-color: #000000;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230a084b'/%3E%3Cstop offset='1' stop-color='%230a084b' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%234d1d5e'/%3E%3Cstop offset='1' stop-color='%234d1d5e' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%234d1d5e'/%3E%3Cstop offset='1' stop-color='%234d1d5e' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230A084B'/%3E%3Cstop offset='1' stop-color='%230A084B' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230A084B'/%3E%3Cstop offset='1' stop-color='%230A084B' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23833672'/%3E%3Cstop offset='1' stop-color='%23833672' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
     background-attachment: fixed;
@@ -22,7 +22,7 @@ body {
     justify-content: space-around;
 }
 
-img {
+.imgProfile{
     width: 190px;
     height: 190px;
     border-radius: 50%;
@@ -31,33 +31,74 @@ img {
     /*con esta propiedad tu imagen mantiene la forma*/
 }
 
-#cuadroTexto {
+.cuadroTexto {
     background-color: #181b20;
-    width: 50vh;
-    height: 40vh;
+    width: 80%;
+    height: 40%;
+    border-radius: 12px;
+}
+.cuadroTexto article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+
 }
 
-#texto {
+.texto {
+    color: #cbcbcb;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
+    font-size: 16px;
     font-style: normal;
+    padding: 10px 20px 10px 20px;
 }
 
-#enlaces {
-    justify-content: space-around;
+.enlaces {
+    width: 100%;
+    display: flex;
+        justify-content: space-evenly;
+        align-items: center;
 }
 
-#linkedin {
+.linkedin, .GitHub, .WhatsApp {
     width: 10vh;
     height: 10vh;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
 }
 
-#GitHub {
-    width: 10vh;
-    height: 10vh;
-}
 
-#WhatsApp {
-    width: 10vh;
-    height: 10vh;
+
+@media screen and (max-width: 780px) { /* Esto es para usar diseño responsive */
+    .Card {
+        width: 80vw;
+        height: 80vh;
+    }
+    .imgProfile {
+        width: 150px;
+        height: 150px;
+    }
+    .cuadroTexto {
+        width: 86%;
+        height: 50%;
+        border-radius: 12px;
+    }
+    .texto {
+        font-size: 16px;
+    }
+    .enlaces {
+        width: 82%;
+        padding: 0 18px 0 18px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .linkedin, .GitHub, .WhatsApp {
+        width: 6vh;
+        height: 6vh;
+    }
+    
 }
