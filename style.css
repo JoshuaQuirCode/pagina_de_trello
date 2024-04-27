@@ -59,8 +59,8 @@ body {
 .enlaces {
     width: 100%;
     display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .linkedin:hover, .GitHub:hover, .WhatsApp:hover {
