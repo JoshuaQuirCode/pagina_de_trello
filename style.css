@@ -63,6 +63,11 @@ body {
         align-items: center;
 }
 
+.linkedin:hover, .GitHub:hover, .WhatsApp:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
 .linkedin, .GitHub, .WhatsApp {
     width: 10vh;
     height: 10vh;
