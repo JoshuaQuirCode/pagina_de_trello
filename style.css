@@ -26,6 +26,7 @@ body {
     width: 190px;
     height: 190px;
     border-radius: 50%;
+    border: 8px solid;
     scrollbar-shadow-color: blue;
     object-fit: cover;
     /*con esta propiedad tu imagen mantiene la forma*/
