@@ -28,6 +28,7 @@ body {
     width: 190px;
     height: 190px;
     border-radius: 50%;
+    border: 8px solid;
     scrollbar-shadow-color: blue;
     object-fit: cover;
     /*con esta propiedad tu imagen mantiene la forma*/
@@ -70,8 +71,13 @@ body {
 .enlaces {
     width: 100%;
     display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.linkedin:hover, .GitHub:hover, .WhatsApp:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .linkedin, .GitHub, .WhatsApp {
